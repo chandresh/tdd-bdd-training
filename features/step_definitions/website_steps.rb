@@ -3,5 +3,5 @@ When(/^I visit the homepage$/) do
 end
 
 Then(/^it should work$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_text "Welcome to my shop"
 end
