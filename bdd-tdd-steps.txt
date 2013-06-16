@@ -50,6 +50,38 @@ If you get errors^^^
 
 bundle exec cucumber features/website.feature
 
+5. Copy the steps from the command output to website_steps.rb
 
+When(/^I visit the homepage$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
+Then(/^it should work$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+6. Change the code:
+
+When(/^I visit the homepage$/) do
+  visit root_path
+end
+
+7. Run cucumber again:
+
+bundle exec cucumber features/website.feature
+
+See the error:
+
+undefined local variable or method `root_path'
+
+8. Create the root route in routes.rb
+
+root :to => 'welcome#index'
+
+9. Run cucumber again:
+
+uninitialized constant WelcomeController
+
+---------------
+We will move to rspec to create a controller_spec
 
