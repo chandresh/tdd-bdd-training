@@ -1,0 +1,55 @@
+BDD
+
+As a visitor, when I visit the homepage, I should be able to see:
+
+	- featured products
+	- categories on the sidebar
+	- list of bestsellers
+
+Cucumber for outside [routes & views <= acceptance testing or integration]
+Rspec for the inside [Controllers &models <= unit testing]
+
+-------------------
+
+1. add gems
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'cucumber', '1.2.5'
+  gem 'cucumber-rails', '1.3.0', require: false
+  gem 'database_cleaner'
+end
+
+2. run generators // command
+
+bundle
+rails g rspec:install
+rails g cucumber:install
+rake db:migrate; rake db:test:prepare
+
+3. write the feature
+
+root/features/website.feature
+
+Feature: As a visitor
+  I should be able to visit the homepage
+
+  Scenario: visit homepage
+    When I visit the homepage
+    Then it should work
+
+4. run the features
+
+cucumber features/website.feature
+
+If you get errors^^^
+
+bundle exec cucumber features/website.feature
+
+
+
+
