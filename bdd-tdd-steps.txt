@@ -85,3 +85,18 @@ uninitialized constant WelcomeController
 ---------------
 We will move to rspec to create a controller_spec
 
+10. We write a controller spec
+
+11. Run
+
+rspec spec/controllers/welcome_controller_spec.rb
+
+ see the error
+
+12. create controller
+
+13.. again run spec..
+
+...
+
+
