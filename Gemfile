@@ -24,6 +24,9 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'guard-cucumber'
 end
 
 group :test do
@@ -31,6 +34,9 @@ group :test do
   gem 'cucumber', '1.2.5'
   gem 'cucumber-rails', '1.3.0', require: false
   gem 'database_cleaner'
+  gem "spork-rails"
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
 end
 
 # To use ActiveModel has_secure_password

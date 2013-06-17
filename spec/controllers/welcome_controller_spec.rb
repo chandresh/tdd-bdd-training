@@ -17,5 +17,10 @@ describe WelcomeController do
       assigns(:categories).should eq(@categories)
     end
 
+    it "is just a fake test" do
+      get :index
+      2.should eq(2)
+    end
+
   end
 end

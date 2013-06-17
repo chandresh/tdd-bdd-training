@@ -97,6 +97,19 @@ rspec spec/controllers/welcome_controller_spec.rb
 
 13.. again run spec..
 
-14. 
+14. Created second feature: category
+15. Created steps
+16. Run the cucumber test
+17. Change the view
+18. Created controller test for validations
+19. created the validation
+20. run the spec test
+21…
+
+
+-------
+
+ 
+
 
 
