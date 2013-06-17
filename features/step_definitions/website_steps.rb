@@ -8,10 +8,12 @@ end
 
 Given(/^some categories exist$/) do
   (1..10).each do |num|
-    Category.create(name: "#{num}")
+    Category.create(name: "category #{num}")
   end
 end
 
 Then(/^I should see the categories$/) do
-  pending # express the regexp above with the code you wish you had
+  Category.all.each do |category|
+    page.should have_text category.name
+  end
 end
