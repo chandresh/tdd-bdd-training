@@ -1,5 +1,8 @@
 Welcome to my shop
 
-<% @categories.each do |category| %>
-    <%= category.name %><br/>
-<% end %>
+<div id="sidebar">
+  <% @categories.each do |category| %>
+      <%= category.name %>
+      <br/>
+  <% end %>
+</div>

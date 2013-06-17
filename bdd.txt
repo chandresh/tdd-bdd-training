@@ -1,0 +1,34 @@
+TDD / BDD
+
+- Do not have too many tests
+- Choose wisely
+- Keep updating your tests (Test first)
+
+Drawback
+	- takes time
+	- Need to learn more stuff
+
+
+Benefits
+
+	- Automated testing
+	- Less bugs
+	- Refactoring is fearless (alomot!)
+	- No need to recreate data, specially
+		
+		date/time based data
+		stats
+
+
+Cucumber Feature
+	Steps
+		get errors
+			change something in view
+						create spec for model
+							change model file
+
+
+
+
+
+Start with model testing

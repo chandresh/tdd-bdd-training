@@ -7,13 +7,15 @@ Then(/^it should work$/) do
 end
 
 Given(/^some categories exist$/) do
-  (1..10).each do |num|
+  (1..100).each do |num|
     Category.create(name: "category #{num}")
   end
 end
 
 Then(/^I should see the categories$/) do
   Category.all.each do |category|
-    page.should have_text category.name
+    within("#sidebar") do
+      page.should have_text category.name
+    end
   end
 end
